@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+:root {
+  --color-default: #212529;
+  --color-primary: #ce1212;
+  --color-secondary: #37373f;
+}
+header {
+  position: sticky;
+  background-color: white;
+  z-index: 2;
+  top: 0px;
+}
+.navbar-main {
+  display: flex;
+  justify-content: center;
+  column-gap: 28px;
+}
+
+.header-padding {
+  margin: 0px auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+div {
+  margin: 0px auto;
+  width: 50%;
+}
+.header-ul {
+  display: flex;
+  width: 90%;
+
+  position: relative;
+}
+.header-ul > li {
+  position: relative;
+  text-decoration: none;
+  transition: 0.3s linear;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+.header-ul > li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-primary);
+  transform-origin: bottom right;
+  transition: width 0.25s ease-out;
+}
+
+.header-ul > li:hover::after {
+  width: 100%;
+  transform-origin: bottom left;
+}
+.dropdown-item {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+.first-button {
+  border: 1px solid var(--color-primary);
+  border-radius: 25px;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 8px 20px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+.first-button:hover {
+  background-color: #f05858;
+}
+.DeepDropDawn-menu {
+  position: relative;
+}
+.Deep-drop-dawn-hover {
+  position: absolute;
+  visibility: hidden;
+  border: 1px solid;
+  border-radius: 15px;
+  background-color: white;
+  padding: 20px 10px;
+  left: 40px;
+}
+.DeepDropDawn-menu:hover .Deep-drop-dawn-hover {
+  visibility: visible;
+}
+.Deep-drop-dawn-hover:hover {
+  color: var(--color-primary);
+  background-color: white;
+}
+@media screen and(max-width:576px) {
+  .first-button {
+    align-self: center;
+  }
+}
+
+/*---------------------------------1-ci Section-------------------------------------------------------------------*/
+.main {
+  width: 100%;
+  background-color: #e8e8e8;
+  display: felx;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.banner {
+  margin: 0px auto;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.deviz,
+.picture {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.deviz {
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.deviz > h1 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+}
+.picture > img {
+  width: 100%;
+}
+.first-section-buttons {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.first-section-buttons > .red-button {
+  border: 1px solid var(--color-primary);
+  border-radius: 25px;
+  color: white;
+  background-color: var(--color-primary);
+  padding: 12px 36px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.first-section-buttons > span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.play-button {
+  transition: 0.2s;
+  font-weight: 500;
+}
+.first-section-buttons > i {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.first-section-buttons > .play-button:hover {
+  color: var(--color-primary);
+}
+.first-section-buttons > .red-button:hover {
+  background-color: #f05858;
+  box-shadow: var(--color-primary);
+}
+
+@media screen and(max-width:1000) {
+  .deviz {
+    text-align: center;
+    order: 5;
+  }
+  .deviz > h1 {
+    text-align: center;
+    font-size: 64px;
+    margin: 0px 0px 20px;
+  }
+  .deviz > p {
+    font-size: 10px;
+    align-self: center;
+    margin: 0px 0px 14px;
+  }
+  .first-section-buttons > .red-button {
+    font-size: 14px;
+    margin: 12px 36px;
+  }
+}
+/*------------------------------------------------------2-ci section---------------------------------------*/
+.secondSection {
+  margin: 0px auto;
+  width: 80%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.secondSection > h2 {
+  color: #7f7f90;
+  font-weight: 400;
+  font-size: 16px;
+}
+.secondSection > p {
+  font-size: 48px;
+  font-family: "Amatic SC", sans-serif;
+}
+.secondSection > p > span {
+  color: var(--color-primary);
+}
+.secondBanner {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+.big-picture {
+  position: relative;
+  justify-content: center;
+  align-content: center;
+}
+
+.big-picture > img {
+  width: 100%;
+}
+.big-picture .call-us {
+  margin: 0px auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  background-color: white;
+  align-self: flex-end;
+  margin-bottom: 40px;
+}
+.big-picture .call-us > h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.big-picture .call-us > p {
+  color: var(--color-primary);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.Breakfast-pic {
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Breakfast-pic .animation-icon > img {
+  width: 100%;
+}
+.Breakfast-pic > p {
+  font-size: 16px;
+}
+.Breakfast-pic > ul {
+  display: flex;
+  flex-direction: column;
+
+  text-align: start;
+  row-gap: 20px;
+}
+.Breakfast-pic > ul > li {
+  font-size: 16px;
+}
+.check-icon {
+  width: 100%;
+  text-align: start;
+}
+.Breakfast-pic .animation-icon {
+  width: 100%;
+  position: relative;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 70px;
+}
+.Breakfast-pic .animation-icon > a {
+  position: absolute;
+  align-self: center;
+}
+@media screen and (min-width: 1400px) {
+  .big-picture > img {
+    width: 60%;
+  }
+}
+/*----------------------------------------Footer-----------------------------------------*/
