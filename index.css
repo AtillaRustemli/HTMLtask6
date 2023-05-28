@@ -203,6 +203,7 @@ div {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  margin-bottom: 20px;
 }
 .secondSection > h2 {
   color: #7f7f90;
@@ -231,6 +232,7 @@ div {
 
 .big-picture > img {
   width: 100%;
+  align-self: flex-start;
 }
 .big-picture .call-us {
   margin: 0px auto;
@@ -291,10 +293,192 @@ div {
 .Breakfast-pic .animation-icon > a {
   position: absolute;
   align-self: center;
+  z-index: 5;
 }
 @media screen and (min-width: 1400px) {
   .big-picture > img {
     width: 60%;
   }
 }
+/*----------------------------------------Contact-----------------------------------------*/
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+
+  background-color: rgb(232, 231, 231);
+}
+.contact > h2 {
+  color: #7f7f90;
+  font-size: 13px;
+}
+.contact > p {
+  font-size: 48px;
+  font-family: "Amatic SC", sans-serif;
+}
+.contact > p > span {
+  color: var(--color-primary);
+}
+.contact-us {
+  margin: 0px auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.contact-us > div {
+  margin: 20px 20px 20px 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  column-gap: 20px;
+}
+.contact-us > div > div {
+  width: 70%;
+}
+.contact-us > div > div > h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(69, 69, 69, 0.5);
+}
+.contact-us > div > i {
+  position: absolute;
+  font-size: 40px;
+}
+.our-address > p,
+.call-us > p,
+.email-us > p {
+  font-size: 13px;
+}
+
+.yourself {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.yourself > form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  padding: 24px;
+}
+.yourself > form > .name,
+.yourself > form > .surname,
+.yourself > form > .subject {
+  padding: 0px 12px 20px;
+}
+.yourself > form > .name > input,
+.yourself > form > .surname > input,
+.yourself > form > .subject > input {
+  padding: 6px 12px;
+  width: 100%;
+}
+
+.yourself > form > .textarea {
+  width: 100%;
+  padding: 10px 12px;
+}
+.yourself > form > .textarea > textarea {
+  width: 100%;
+}
+.yourself > form > .form-button {
+  border: 1px solid var(--color-primary);
+  padding: 12px 40px;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 760px) {
+  .contact-us > div > i {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 970px) {
+  .contact-us > div > i {
+    font-size: 40px;
+  }
+}
 /*----------------------------------------Footer-----------------------------------------*/
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--color-default);
+}
+
+.last-one {
+  position: relative;
+  width: 80%;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.last-one > div > i {
+  position: absolute;
+}
+.last-one h4,
+.last-one p {
+  color: white;
+}
+.last-one h4 {
+  font-size: 16px;
+}
+.last-one p,
+.last-one a {
+  font-size: 14px;
+}
+.last-one .Addres,
+.last-one .phone,
+.last-one .opening-hours,
+.last-one .follow-us {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.last-one .Addres > div,
+.last-one .phone > div,
+.last-one .opening-hours > div {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 10px;
+}
+.last-one .follow-us > div {
+  display: flex;
+  width: 80%;
+  justify-content: flex-start;
+  column-gap: 20px;
+}
+.last-one .follow-us > div > a {
+  font-size: 20px;
+}
+footer > .creator {
+  margin-bottom: -20px;
+}
+footer > .designer {
+  margin-bottom: 50px;
+}
+footer > .creator,
+footer > .designer {
+  text-align: center;
+  color: white;
+}
+footer > .creator > p,
+footer > .designerp {
+  font-size: 13px;
+}
+footer > .creator span,
+footer > .designer span {
+  color: rgb(205, 201, 201);
+  font-weight: 400;
+  font-size: 13px;
+}
